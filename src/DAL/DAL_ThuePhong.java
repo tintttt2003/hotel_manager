@@ -40,6 +40,6 @@ public class DAL_ThuePhong {
 
     public static ResultSet count(String thoiGian) {
         String sqlSelect = "SELECT COUNT(*) FROM PhieuThuePhong WHERE MaPhieuThue LIKE ?";
-        return HELPER_ConnectSQL.executeQuery(sqlSelect, "%" + thoiGian + "%");
+        return HELPER_ConnectSQL.executeQuery(sqlSelect, "%" + thoiGian + "%"); 
     }
 }
